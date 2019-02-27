@@ -1,0 +1,21 @@
+server:
+    port: 9080
+spring:
+    application:
+        name: zuul
+
+eureka:
+    client:
+        serviceUrl:
+            defaultZone: http://localhost:8080/eureka/
+zuul:
+  routes:
+    userApi:
+      path: /user/**
+      serviceId: user
+      stripPrefix: true
+    orderApi:
+      path: /order/**
+      serviceId: order
+      stripPrefix: true  #去除前缀，默认开启
+
