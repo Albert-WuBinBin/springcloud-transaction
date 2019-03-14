@@ -17,5 +17,5 @@ zuul:
     orderApi:
       path: /order/**
       serviceId: order
-      stripPrefix: true  #È¥³ıÇ°×º£¬Ä¬ÈÏ¿ªÆô
+      stripPrefix: true  #å»é™¤å‰ç¼€ï¼Œé»˜è®¤å¼€å¯
 
